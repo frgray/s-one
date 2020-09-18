@@ -1,6 +1,17 @@
 # Signature Checker
 Computes the percentage of virus engines that detected requested signature as malicious and prints the result
 
+## Requirements
+* VirusTotal [API Key](https://www.virustotal.com/gui/join-us)
+* Python 3
+
+## Python Library Requirements
+* requests
+* certifi
+* chardet
+* idna
+* urllib3
+
 ## Common Usage
 ```bash
 [user@host:~/] pip3 install -r ./requirements.txt
