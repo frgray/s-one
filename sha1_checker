@@ -69,7 +69,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Computes the percentage of virus engines that detected requested signature as malicious')
     parser.add_argument("signature", type=str, help="Signature value of file to test")
     parser.add_argument("--key", type=str, help="VirusTotal API Key ")
-    parser.add_argument("--debug", action='store_true', default=False, help="Enable DEBUG logging")
     args = parser.parse_args()
 
     f = FileResults(signature=args.signature, api_key=args.key)
